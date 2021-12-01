@@ -3,14 +3,14 @@ resource "aws_instance" "server1" {
   instance_type               = var.instance_type
   subnet_id                   = aws_subnet.subnet1.id
   associate_public_ip_address = true
-  vpc_security_group_ids      = [aws_security_group.allow_icmp_ssh.id, aws_security_group.allow_http_https.id]
-  private_ip                  = var.subnet1_private_ip
-  key_name                    = aws_key_pair.key1.key_name
+  vpc_security_group_ids      = [aws_security_group.allow_http_ssh.id]
+  private_ip                  = "172.16.6.6"
+  key_name                    = var.key1
   user_data                   = file("user-data.sh")
 
   tags = {
     Name        = "server-1"
-    Owner       = var.username
+    Owner       = "student_6"
     Environment = "develop"
     OS          = "amazon-linux"
   }

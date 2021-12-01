@@ -1,8 +1,5 @@
-## Setup Github Actions Secrets
-- ORGANIZATION
-- WORKSPACE
-- TF_API_TOKEN
+## Resumen desafío IV
 
-## Related Links
-- [GHA Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+En este repositorio está desarrollando el desafío IV, se detalla a continuación detalles de los desafíos planteados para su implementación:
+
 
